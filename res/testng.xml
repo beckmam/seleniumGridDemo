@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1"  parallel="tests" thread-count="5">  
+  
+<test name="ie">  
+    <parameter name="browser" value="ie"/>  
+    <parameter name="nodeUrl" value="http://192.168.199.164:5555"/>  
+    <parameter name="webSite" value="http://www.goetui.com"/>  
+    <classes>  
+        <class name="com.testBee.seleniumGridDemo.DemoOneTest"></class>  
+    </classes>  
+</test>  
+ 
+<test name="ff">  
+    <parameter name="browser" value="ff"/>  
+    <parameter name="nodeUrl" value="http://192.168.199.65:5555"/>  
+    <parameter name="webSite" value="http://www.goetui.com"/>  
+    <classes>  
+        <class name="com.testBee.seleniumGridDemo.DemoOneTest"></class>  
+    </classes>  
+</test>
+
+<test name="chrome">  
+    <parameter name="browser" value="chrome"/>  
+    <parameter name="nodeUrl" value="http://192.168.199.65:6666"/>  
+    <parameter name="webSite" value="http://www.goetui.com"/>  
+    <classes>  
+        <class name="com.testBee.seleniumGridDemo.DemoOneTest"></class>  
+    </classes>  
+</test>
+  
+</suite> 
